@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <link rel="icon" href="./logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .contain1 {
+        display: flex;
+      }
+      .a {
+        margin-right: 30px;
+      }
+      .b {
+        margin-right: 30px;
+      }
+      .main {
+        border: solid blue;
+        border-width: 15px;
+        padding: 30px;
+        width: 50%;
+        text-align: left;
+        margin-left: 25%;
+      }
+      .form2 {
+        background-color: blueviolet;
+        color: white;
+        margin-right: 275px;
+        margin-left: 25%;
+      }
+      .reg {
+        display: flex;
+      }
+      .col1 {
+        margin-right: 50px;
+        margin-left: 5px;
+      }
+      .ginform input,
+      select {
+        font-family: calibri;
+        border: none;
+        border-bottom: 2px groove;
+        margin-bottom: 8px;
+        background-color: white;
+      }
+      .ginform {
+        margin-left: 240px;
+      }
+
+      .form3 {
+        display: flex;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        margin-left: 200px;
+      }
+      .contact {
+        font-family: calibri;
+        margin-left: 40px;
+        background-color: blueviolet;
+        margin-bottom: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .contact input,
+      select {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: blueviolet;
+        color: rgba(255, 255, 255, 0.217);
+        border-bottom-color: rgba(255, 255, 255, 0.358);
+      }
+      .contact ::placeholder {
+        color: rgba(255, 255, 255, 0.662);
+      }
+
+      .cred {
+        font-family: arial;
+        display: flex;
+        margin-left: 400px;
+        background-color: rgb(77, 77, 237);
+        margin-right: 500px;
+        margin-top: 200px;
+        border-radius: 20px;
+      }
+      .login {
+        padding: 30px;
+      }
+      .signup {
+        margin-left: -30px;
+        padding: 30px;
+      }
+      .login form {
+        background-color: white;
+        padding: 1px 40px 40px;
+        border-radius: 20px;
+      }
+      .signup form {
+        background-color: white;
+        padding: 1px 40px 40px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <form action="">
+        <h1><span style="border-bottom: 2px solid blue">Re</span>gistration</h1>
+        <h3>Personal details</h3>
+        <div class="contain1">
+          <div class="a">
+            <label for=""><b>Full Name</b></label
+            ><br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            /><br /><br />
+            <label for=""><b>Mobile Number</b></label
+            ><br />
+            <input
+              type="number"
+              placeholder="Enter Mobile Number"
+            /><br /><br />
+          </div>
+          <div class="b">
+            <label for=""><b>Date of Birth</b></label
+            ><br />
+            <input type="date" placeholder="" /><br /><br />
+            <label for=""><b>Gender</b></label
+            ><br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your gender"
+            /><br /><br />
+          </div>
+          <div class="c">
+            <label for=""><b>Email</b></label
+            ><br />
+            <input type="email" placeholder="Enter your Email" /><br /><br />
+            <label for=""><b>Occupation</b></label
+            ><br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter occupation"
+            /><br /><br />
+          </div>
+        </div>
+        <h3>Identity details</h3>
+        <div class="contain1">
+          <div class="a">
+            <label for=""><b>ID Type</b></label
+            ><br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter ID Type"
+            /><br /><br />
+            <label for=""><b>Issue Date</b></label
+            ><br />
+            <input type="date" placeholder="Enter issue date" /><br /><br />
+          </div>
+          <div class="b">
+            <label for=""><b>ID Number</b></label
+            ><br />
+            <input type="number" placeholder="Enter ID number" /><br /><br />
+            <label for=""><b>Issue State</b></label
+            ><br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter ID Issue State"
+            /><br /><br />
+          </div>
+          <div class="c">
+            <label for=""><b>Issue Authority</b></label
+            ><br />
+            <input
+              type="email"
+              placeholder="Enter Issue department"
+            /><br /><br />
+            <label for=""><b>Expiry Date</b></label
+            ><br />
+            <input
+              type="date"
+              name="name"
+              placeholder="Enter ID Expiry Date"
+            /><br /><br />
+          </div>
+        </div>
+        <button
+          style="
+            background-color: rgb(52, 14, 245);
+            color: white;
+            padding: 5px 50px;
+            border-radius: 7px;
+            border-color: rgb(52, 14, 245);
+          "
+        >
+          Next
+        </button>
+      </form>
+    </div>
+    <div class="form2">
+      <form action="" style="font-family: Arial, Helvetica, sans-serif">
+        <h1 style="text-align: center; color: rgb(236, 244, 13)">
+          STUDENT REGISTRATION FORM
+        </h1>
+        <div class="reg">
+          <div class="col1">
+            <label for="">FIRST NAME</label>
+            <br /><br /><label for="">LAST NAME</label> <br /><br /><label
+              for=""
+              >DATE OF BIRTH</label
+            >
+            <br /><br /><br /><label for="">EMAIL ID</label> <br /><br /><label
+              for=""
+              >MOBILE NUMBER</label
+            >
+            <br /><br /><label for="">GENDER</label> <br /><br /><label for=""
+              >ADDRESS</label
+            >
+            <br /><br /><br /><br /><br /><br /><label for="">CITY</label>
+            <br /><br /><label for="">PIN CODE</label> <br /><br /><label for=""
+              >STATE</label
+            >
+            <br /><br /><label for="">COUNTRY</label> <br /><br /><label for=""
+              >HOBBIES</label
+            >
+            <br /><br /><br /><label for="">QUALIFICATION</label>
+            <br /><br /><br><br><br /><br /><br /><br /><br /><br /><br><label for=""
+              >COURSES <br />APPLIED FOR</label
+            >
+          </div>
+          <div class="col2">
+            <input type="text" />(max 30 characters a-z and A-Z)
+            <br /><br /><input type="text" />(max 30 characters a-z and A-Z)
+            <br /><br /><input type="date" /> <br /><br />
+            <input type="text" />
+            <br /><br />
+            <input type="tel" />(10 digit number) <br /><br />
+            Male<input type="radio" /> Female<input type="radio" /> <br /><br />
+            <textarea name="" id="" rows="5" cols="40"></textarea>
+            <br /><br />
+            <input type="text" />(max 30 characters a-z and A-Z)
+            <br /><br /><input type="text" />(6 digit number) <br /><br /><input
+              type="text"
+            />(max 30 characters a-z and A-Z) <br /><br /><input
+              value="INDIA"
+              readonly
+              type="text"
+            /><br /><br />
+            Drawing<input type="checkbox" name="" id="" />Singing<input
+              type="checkbox"
+            />Dancing<input type="checkbox" />Sketching<input
+              type="checkbox"
+            /><br />Others<input type="checkbox" /><input type="text" />
+            <pre
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 12px"
+            >
+SL.NO  Examination                     Board                                        percentage                                Year of passing</pre
+            >
+            <pre
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 13px"
+            >1           Class X      <input type="text"> <input type="text"> <input type="text"></pre>
+            <pre
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 13px"
+            >2           Class XII    <input type="text"> <input type="text"> <input type="text"></pre>
+            <pre
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 13px"
+            >3           Graduation <input type="text"> <input type="text"> <input type="text"></pre>
+            <pre
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 13px"
+            >4           Masters      <input type="text"> <input type="text"> <input type="text"></pre>
+            <pre
+              style="font-family: Arial, Helvetica, sans-serif; font-size: 11px"
+            >
+                                                 (10 characters)                                   (Upto 2 decimal)</pre
+            >
+            <br /><br />
+            BCA <input type="radio" />B.A <input type="radio" />B.Com
+            <input type="radio" />B.Sc <input type="radio" />
+          </div>
+        </div>
+        <br />
+        <button
+          style="
+            margin-left: 45%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+          "
+        >
+          Submit
+        </button>
+        <button
+          style="
+            margin-left: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+          "
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+    <div class="form3">
+      <div class="ginform">
+        <h2 style="color: rgb(0, 157, 255)">General Information</h2>
+        <br />
+        <input type="text" placeholder="Title" /><input type="text" /><select
+          name=""
+          id=""
+        ></select
+        ><br /><br />
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" /><br /><br />
+        <input type="text" placeholder="Position" /><input type="text" /><select
+          name=""
+          id=""
+        ></select
+        ><br /><br />
+        <input type="text" placeholder="Company" /><input type="text" />
+        <br /><br />
+        <input type="text" placeholder="Business Arena" />
+        <input type="text" placeholder="Employees" /><select
+          name=""
+          id=""
+        ></select>
+      </div>
+      <div class="contact">
+        <h2 style="color: white">Contact Details</h2>
+        <input type="text" placeholder="Street+Nr" /><input
+          type="text"
+        /><br /><br />
+        <input type="text" placeholder="Additional Information" /><input
+          type="text"
+        /><br /><br />
+        <input type="text" placeholder="Zip Code" />
+        <input type="text" placeholder="Place" /><select name="" id=""></select
+        ><br /><br />
+        <input type="text" placeholder="Country" /><input type="text" /><select
+          name=""
+          id=""
+        ></select
+        ><br /><br />
+        <input type="text" placeholder="Code+" />
+        <input type="text" placeholder="Phone Number" /><br /><br />
+        <input type="text" placeholder="Your Email" /><input
+          type="text"
+        /><br /><br /><br />
+        <input type="checkbox" /> I do accept <u>Terms and Conditions</u>* of
+        your site <br /><br /><br /><br />
+        <button
+          style="
+            border-radius: 18px;
+            padding: 7px 10px;
+            background-color: white;
+            font-size: 13px;
+            font-weight: bold;
+            border-color: white;
+          "
+        >
+          Register Badge</button
+        ><br /><br /><br /><br />
+      </div>
+    </div>
+    <div class="cred">
+      <div class="login">
+        <form action="">
+          <h3 style="text-align: center">Login</h3>
+          <input type="text" placeholder="Email" /><br /><br />
+          <input type="password" placeholder="Password" />
+
+          <br /><br /><a
+            href=""
+            style="
+              text-decoration: none;
+              text-align: center;
+              padding-left: 20%;
+              font-size: smaller;
+            "
+            >Forgot Password?</a
+          ><br /><br />
+          <button
+            style="
+              background-color: rgb(81, 81, 250);
+              color: white;
+              padding: 6px 70px;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            Login
+          </button>
+          <p style="font-size: 12px; text-align: center">
+            Don't have an account?<a href="" style="text-decoration: none"
+              >sign up</a
+            >
+          </p>
+          _________or_________
+          <br /><br />
+          <button
+            style="
+              background-color: rgb(83, 23, 212);
+              color: white;
+              padding: 5px 20px 5px 20px;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              /></svg
+            >Login with Facebook</button
+          ><br /><br />
+          <button
+            style="
+              background-color: white;
+              padding: 5px 27px;
+              border-radius: 5px;
+              border: 1px solid rgb(143, 143, 141);
+              color: rgb(52, 52, 55);
+            "
+          >
+            <i class="fa-brands fa-google"></i>
+            Login with Google
+          </button>
+        </form>
+      </div>
+      <div class="signup">
+        <form action="">
+          <h3 style="text-align: center">Signup</h3>
+          <input type="text" placeholder="Email" /><br /><br />
+          <input type="password" placeholder="Create Password" />
+          <br /><br />
+          <input type="password" placeholder="confirm Password" />
+          <br /><br />
+          <button
+            style="
+              background-color: rgb(81, 81, 250);
+              color: white;
+              padding: 6px 65px;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            Signup
+          </button>
+          <p style="font-size: 11px; text-align: center">
+            Already have an account?<a href="" style="text-decoration: none"
+              >Login</a
+            >
+          </p>
+          <p>_________or_________</p>
+          <br />
+          <button
+            style="
+              background-color: rgb(83, 23, 212);
+              color: white;
+              padding: 5px 18px 5px 18px;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              /></svg
+            >Login with Facebook</button
+          ><br /><br />
+          <button
+            style="
+              background-color: white;
+              padding: 5px 26px;
+              border-radius: 5px;
+              border: 1px solid rgb(143, 143, 141);
+              color: rgb(52, 52, 55);
+            "
+          >
+            <i class="fa-brands fa-google"></i>Login with Google
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
